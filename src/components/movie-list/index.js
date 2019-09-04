@@ -37,13 +37,16 @@ class MovieList extends Component {
   render() {
     const { moviesData } = this.state;
     const { title } = this.props;
-    console.log(this.state.moviesData);
     return (
       <div className="container">
-        <h2>{title}</h2>
-        {moviesData.map((movie, index) => {
-          return <MovieCard key={`movie-${index}`} movie={movie} />;
-        })}
+        <div className="row mt-5">
+          <h2 className="">{title}</h2>
+        </div>
+        <div className="row mt-2">
+          {moviesData.map((movie, index) => {
+            return <MovieCard key={`movie-${index}`} movie={movie} />;
+          })}
+        </div>
       </div>
     );
   }
