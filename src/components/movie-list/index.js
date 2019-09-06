@@ -39,10 +39,12 @@ class MovieList extends Component {
     const { title } = this.props;
     return (
       <div className="container">
-        <div className="row mt-5">
-          <h2 className="">{title}</h2>
-        </div>
         <div className="row mt-2">
+          <div className="section-title mb-4">
+            <h2>{title}</h2>
+          </div>
+        </div>
+        <div className="row mt-5">
           {moviesData.map((movie, index) => {
             return <MovieCard key={`movie-${index}`} movie={movie} />;
           })}

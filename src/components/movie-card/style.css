@@ -1,3 +1,70 @@
 .movie-cards {
-  display: inline-flex;
+  display: block;
+  height: 470px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.card {
+  height: 100%;
+  padding: 10px 0;
+  border-radius: 15px;
+  background-color: #1b2d53;
+}
+
+.poster-path {
+  margin-top: -50px;
+}
+.poster-path img {
+  border-radius: 15px;
+  box-shadow: 0 0 15px -5px rgba(241, 245, 248, 0.22);
+}
+.poster-path,
+.movie-info {
+  top: 0;
+  left: 0;
+  display: block;
+  position: relative;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.movie-info {
+  padding: 10px 30px;
+}
+
+.movie-info .title,
+.movie-info .release-date,
+.movie-info .vote-average,
+.movie-info .genres {
+  color: #c2c8d7aa;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.movie-info .release-date,
+.movie-info .vote-average,
+.movie-info .genres {
+  font-size: 14px;
+}
+
+.movie-info .title {
+  color: #eee;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.vote-average,
+.genres {
+  display: flex;
+  align-items: center;
+}
+.atr-icon {
+  height: 26px;
+  line-height: 30px;
+}
+
+.atr-icon i {
+  color: #fac84f;
+}
+.atr-text {
+  margin-left: 10px;
 }
