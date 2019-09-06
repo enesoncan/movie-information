@@ -1,12 +1,23 @@
 import React, { Component } from "react";
 import "./style.css";
 
+import { NavLink } from "react-router-dom";
+
 class Navigation extends Component {
   render() {
     return (
-      <div>
-        <h1>Navbar</h1>
-      </div>
+      <ul className="navigate">
+        <li>
+          <NavLink exact activeClassName="active" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact activeClassName="active" to="/fav-list">
+            Favorite List
+          </NavLink>
+        </li>
+      </ul>
     );
   }
 }
