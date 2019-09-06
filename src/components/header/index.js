@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./style.css";
 
+import Logo from "./logo";
+
 class Header extends Component {
   render() {
     return (
-      <div>
-        <h1>Header</h1>
-      </div>
+      <header className="container-fluid wrapper">
+        <Logo />
+      </header>
     );
   }
 }
