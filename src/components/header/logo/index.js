@@ -4,16 +4,16 @@ import "./style.css";
 class Logo extends Component {
   render() {
     return (
-      <div className="logo">
+      <div className="logo col-md-4">
         <svg width="300" height="80">
           <defs id="SvgjsDefs1898">
             <linearGradient id="SvgjsLinearGradient1903">
-              <stop id="SvgjsStop1904" stop-color="#7f00ff" offset="0"></stop>
-              <stop id="SvgjsStop1905" stop-color="#e100ff" offset="1"></stop>
+              <stop id="SvgjsStop1904" stopColor="#7f00ff" offset="0"></stop>
+              <stop id="SvgjsStop1905" stopColor="#e100ff" offset="1"></stop>
             </linearGradient>
             <linearGradient id="SvgjsLinearGradient1906">
-              <stop id="SvgjsStop1907" stop-color="#7f00ff" offset="0"></stop>
-              <stop id="SvgjsStop1908" stop-color="#e100ff" offset="1"></stop>
+              <stop id="SvgjsStop1907" stopColor="#7f00ff" offset="0"></stop>
+              <stop id="SvgjsStop1908" stopColor="#e100ff" offset="1"></stop>
             </linearGradient>
           </defs>
           <g id="SvgjsG1899" featurekey="root" fill="#030303"></g>

@@ -8,8 +8,10 @@ class Header extends Component {
   render() {
     return (
       <header className="container-fluid wrapper">
-        <Logo />
-        <Navigation />
+        <div className="row">
+          <Logo />
+          <Navigation />
+        </div>
       </header>
     );
   }
