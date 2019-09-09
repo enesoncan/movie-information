@@ -21,7 +21,7 @@ class MovieCard extends Component {
     const getGenres = this.getGenresName(movie.genre_ids);
 
     return (
-      <div className="movie-cards col-md-3">
+      <div className="movie-cards col-sm-6 col-md-3">
         <div className="card">
           <div className="poster-path">
             <img
@@ -44,6 +44,14 @@ class MovieCard extends Component {
               </span>
               <span className="atr-text">{getGenres.join(", ")}</span>
             </p>
+          </div>
+          <div className="movie-buttons">
+            <button type="button" className="detail-button">
+              Details
+            </button>
+            <button type="button" className="fav-button">
+              <i className="material-icons">favorite_border</i>
+            </button>
           </div>
         </div>
       </div>
