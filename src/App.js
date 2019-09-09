@@ -17,16 +17,16 @@ function App() {
           <Route path="/fav-list" component={FavList} />
           <Route path="/" exact>
             <MovieList
+              title="Upcoming Movies"
+              endpoint={API_ENDPOINTS.UPCOMING}
+            />
+            <MovieList
               title="Popular Movies"
               endpoint={API_ENDPOINTS.POPULAR}
             />
             <MovieList
               title="Top Rated Movies"
               endpoint={API_ENDPOINTS.TOP_RATED}
-            />
-            <MovieList
-              title="Upcoming Movies"
-              endpoint={API_ENDPOINTS.UPCOMING}
             />
           </Route>
         </Switch>
