@@ -36,7 +36,9 @@ class MovieCard extends Component {
               <span className="atr-icon">
                 <i className="material-icons">star</i>
               </span>
-              <span className="atr-text">{movie.vote_average}</span>
+              <span className="atr-text">
+                {movie.vote_average !== 0 ? movie.vote_average : "Unrated"}
+              </span>
             </p>
             <p className="genres">
               <span className="atr-icon">
